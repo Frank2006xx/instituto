@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Superior | Formación Profesional</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Archivo CSS propio -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand fw-bold" href="#inicio">
+                Instituto Superior
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programas">Programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registro">Inscripciones</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PRESENTACIÓN PRINCIPAL -->
+        <section id="inicio" class="portada">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <p class="etiqueta">Tu futuro comienza aquí</p>
+                        <h1>Construye tu futuro profesional</h1>
+                        <p class="descripcion">
+                            Aprende nuevas habilidades, desarrolla tu talento
+                            y prepárate para alcanzar tus metas profesionales
+                            con nuestros programas de formación.
+                        </p>
+                        <a href="#programas" class="btn btn-naranja">
+                            Ver programas
+                        </a>
+                        <a href="#registro" class="btn btn-outline-light ms-2">
+                            Inscribirme
+                        </a>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="tarjeta-portada">
+                            <span class="icono-portada">🎓</span>
+                            <h2>Aprende. Crece. Avanza.</h2>
+                            <p>Formación práctica para un futuro con más oportunidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN INSTITUCIONAL -->
+        <section id="nosotros" class="seccion container">
+            <div class="text-center">
+                <p class="etiqueta">Conócenos</p>
+                <h2 class="titulo-seccion">Sobre nuestra institución</h2>
+                <p class="texto-seccion">
+                    Somos una institución orientada a la formación técnica
+                    y al desarrollo de competencias profesionales.
+                    Buscamos ofrecer información clara y facilitar el acceso
+                    de los estudiantes a nuestros servicios académicos.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <article class="tarjeta-info">
+                        <span>📚</span>
+                        <h3>Educación</h3>
+                        <p>Aprendizaje orientado al desarrollo de conocimientos y habilidades.</p>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="tarjeta-info">
+                        <span>💻</span>
+                        <h3>Tecnología</h3>
+                        <p>Herramientas digitales para afrontar los retos actuales.</p>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="tarjeta-info">
+                        <span>🚀</span>
+                        <h3>Oportunidades</h3>
+                        <p>Preparación para el crecimiento académico y profesional.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAMAS ACADÉMICOS -->
+        <section id="programas" class="seccion programas">
+            <div class="container">
+                <div class="text-center">
+                    <p class="etiqueta">Nuestra oferta académica</p>
+                    <h2 class="titulo-seccion">Programas académicos</h2>
+                    <p class="texto-seccion">
+                        Explora algunas de nuestras áreas de formación.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-3">
+                    <div class="col-md-4">
+                        <article class="tarjeta-programa">
+                            <span>🌐</span>
+                            <h3>Desarrollo Web</h3>
+                            <p>Aprende a crear páginas y aplicaciones web.</p>
+                            <a href="#registro">Solicitar información →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="tarjeta-programa">
+                            <span>🖥️</span>
+                            <h3>Computación e Informática</h3>
+                            <p>Desarrolla competencias en sistemas y tecnología.</p>
+                            <a href="#registro">Solicitar información →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="tarjeta-programa">
+                            <span>📊</span>
+                            <h3>Gestión Empresarial</h3>
+                            <p>Conoce herramientas para la gestión de organizaciones.</p>
+                            <a href="#registro">Solicitar información →</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <section id="registro" class="seccion container">
+            <div class="formulario-contenedor">
+                <div class="text-center">
+                    <p class="etiqueta">Da el siguiente paso</p>
+                    <h2 class="titulo-seccion">Formulario de registro</h2>
+                    <p class="texto-seccion">
+                        Completa tus datos para solicitar información académica.
+                    </p>
+                </div>
+
+                <form id="formularioRegistro">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">
+                            Nombre completo
+                        </label>
+                        <input type="text" class="form-control" id="nombre"
+                            name="nombre" required minlength="3"
+                            placeholder="Ingresa tus nombres y apellidos">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">
+                            Correo electrónico
+                        </label>
+                        <input type="email" class="form-control" id="correo"
+                            name="correo" required
+                            placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="celular" class="form-label">
+                            Número de celular
+                        </label>
+                        <input type="tel" class="form-control" id="celular"
+                            name="celular" required pattern="[0-9]{9}"
+                            maxlength="9" inputmode="numeric"
+                            placeholder="Ejemplo: 987654321"
+                            title="Ingresa exactamente 9 dígitos">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="programa" class="form-label">
+                            Programa de interés
+                        </label>
+                        <select id="programa" name="programa"
+                            class="form-select" required>
+                            <option value="">Selecciona un programa</option>
+                            <option value="Desarrollo Web">Desarrollo Web</option>
+                            <option value="Computación e Informática">
+                                Computación e Informática
+                            </option>
+                            <option value="Gestión Empresarial">
+                                Gestión Empresarial
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input"
+                            id="acepto" name="acepto" required>
+                        <label for="acepto" class="form-check-label">
+                            Acepto que mis datos se utilicen para responder
+                            a mi solicitud de información.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-naranja w-100">
+                        Enviar registro
+                    </button>
+
+                    <div id="mensaje" class="mt-3" role="status"
+                        aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <div class="container text-center">
+            <h2>Instituto Superior</h2>
+            <p>Formando profesionales para el futuro.</p>
+            <p class="mb-0">
+                &copy; <span id="anio"></span> Instituto Superior.
+                Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Archivo JavaScript propio -->
+    <script src="script.js"></script>
+</body>
+</html>

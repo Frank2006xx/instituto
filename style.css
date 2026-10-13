@@ -1,0 +1,275 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243047;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.encabezado {
+    background-color: #102b50;
+}
+
+.navbar-brand {
+    font-size: 1.35rem;
+}
+
+.nav-link {
+    margin-left: 12px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffb347;
+}
+
+/* PORTADA */
+.portada {
+    padding: 90px 0;
+    color: white;
+    background: linear-gradient(120deg, #102b50, #1d527e);
+}
+
+.etiqueta {
+    color: #e47b25;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+}
+
+.portada .etiqueta {
+    color: #ffbd72;
+}
+
+.portada h1 {
+    max-width: 700px;
+    margin: 15px 0;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.descripcion {
+    max-width: 620px;
+    margin: 20px 0 28px;
+    color: #e2eaf4;
+    font-size: 1.1rem;
+}
+
+.btn-naranja {
+    background-color: #f28c28;
+    border: 2px solid #f28c28;
+    color: white;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-naranja:hover {
+    background-color: #d96e13;
+    border-color: #d96e13;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.tarjeta-portada {
+    padding: 40px 25px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+}
+
+.icono-portada {
+    display: block;
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta-portada h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* SECCIONES */
+.seccion {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.titulo-seccion {
+    margin: 10px 0 18px;
+    color: #102b50;
+    font-weight: 800;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.texto-seccion {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #64748b;
+}
+
+/* TARJETAS */
+.tarjeta-info,
+.tarjeta-programa {
+    height: 100%;
+    padding: 28px;
+    border-radius: 14px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 18px rgba(16, 43, 80, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-info:hover,
+.tarjeta-programa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(16, 43, 80, 0.12);
+}
+
+.tarjeta-info span,
+.tarjeta-programa span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.tarjeta-info h3,
+.tarjeta-programa h3 {
+    color: #102b50;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.tarjeta-info p,
+.tarjeta-programa p {
+    color: #64748b;
+}
+
+.programas {
+    background-color: #f3f6fa;
+}
+
+.tarjeta-programa a {
+    color: #d96e13;
+    font-weight: bold;
+}
+
+.tarjeta-programa a:hover {
+    color: #102b50;
+}
+
+/* FORMULARIO */
+.formulario-contenedor {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(16, 43, 80, 0.09);
+}
+
+.formulario-contenedor .text-center {
+    margin-bottom: 28px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #243047;
+}
+
+.form-control,
+.form-select {
+    min-height: 46px;
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #f28c28;
+    box-shadow: 0 0 0 0.2rem rgba(242, 140, 40, 0.18);
+}
+
+#mensaje {
+    padding: 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#mensaje.exito,
+#mensaje.error {
+    padding: 12px;
+}
+
+#mensaje.exito {
+    color: #146c43;
+    background-color: #d1e7dd;
+}
+
+#mensaje.error {
+    color: #842029;
+    background-color: #f8d7da;
+}
+
+/* PIE DE PÁGINA */
+.pie-pagina {
+    padding: 35px 0;
+    color: #e2eaf4;
+    background-color: #102b50;
+}
+
+.pie-pagina h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.pie-pagina p {
+    margin-top: 8px;
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 768px) {
+    .portada {
+        padding: 55px 0;
+    }
+
+    .portada .btn {
+        margin-bottom: 10px;
+    }
+
+    .tarjeta-portada {
+        margin-top: 10px;
+    }
+
+    .seccion {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .formulario-contenedor {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portada .btn {
+        display: block;
+        width: 100%;
+        margin-left: 0 !important;
+    }
+}
